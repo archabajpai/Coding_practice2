@@ -1,4 +1,10 @@
-                long ans[]=new long[n];
+// Steps:
+        // ->if stack is eempty push -1
+        // ->if stack is not empty and the element at top of stack is greater than the curr array element thn ans is top element of stack
+        // ->if top element is <curr element then kepp on poping,
+        // keep on poping until the stack becomes empty or the elemnt is grater at top;
+        // keep pushing the already traversed eleeemnt in stack
+long ans[]=new long[n];
         Stack<Long> st=new Stack<>();
         for(int i=n-1;i>=0;i--){
             if(st.isEmpty()) ans[i]=-1;
